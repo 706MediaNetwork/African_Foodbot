@@ -4,6 +4,7 @@ from llama_index.llms import OpenAI
 import openai
 from llama_index import SimpleDirectoryReader
 
+openai.api_key = st.secrets.openai_key
 st.header("非洲食物bot")
 
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
